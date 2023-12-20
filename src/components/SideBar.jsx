@@ -12,6 +12,7 @@ import {
 } from "react-icons/hi2";
 
 import useDetectClickOutside from "../hooks/useDetectClickOutside";
+import { serverUrl } from "../services/server";
 
 const menuItems = [
   {
@@ -84,12 +85,12 @@ function SideBar({ open, setOpen }) {
 
   return (
     <aside
-      className="fixed top-0 start-0 bottom-0 z-[60] selection:flex flex-col w-64 h-screen px-5 py-8 auto bg-white border-r rtl:border-r-0 rtl:border-l"
+      className="fixed top-0 start-0 bottom-0 z-[60] selection:flex flex-col w-64 h-screen px-5 py-8 bg-white border-r rtl:border-r-0 rtl:border-l"
       ref={sidebarRef}
       style={transitionStyle}
     >
       <a href="#">
-        <img className="w-12 h-12" src={`brand.png`} alt="" />
+        <img className="w-12 h-12" src={`${serverUrl}${"brand.png"}`} alt="" />
       </a>
 
       <div className="flex flex-col justify-between flex-1 mt-6 font">

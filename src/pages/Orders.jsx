@@ -1,5 +1,11 @@
+import UserOrderTable from "../components/UserOrderTable";
+
 function Orders() {
-  return <div></div>;
+  return (
+    <div>
+      <UserOrderTable />
+    </div>
+  );
 }
 
 export default Orders;

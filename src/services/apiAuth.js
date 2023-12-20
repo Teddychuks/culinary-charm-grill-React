@@ -19,10 +19,16 @@ export async function signInUser({ email, password }) {
 }
 
 export async function getUser() {
+  const authToken = localStorage.getItem("token");
   const url = `${serverUrl}user/myaccount`;
 
   try {
-    const response = await axios.get(url);
+    const response = await axios.get(url, {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${authToken}`,
+      },
+    });
     return response.data;
   } catch (error) {
     throw new Error(error);

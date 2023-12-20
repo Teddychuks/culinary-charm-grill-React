@@ -6,8 +6,12 @@ import {
   increaseItemQuantity,
   decreaseItemQuantity,
   deleteItem,
+  clearCart,
+  resetSelectedItemId,
 } from "./cartSlice";
 import { serverUrl } from "../../services/server";
+import { useCreateNewOrder } from "../../hooks/useCreateOrder";
+import LoginSpinner from "../../ui/LoginSpinner";
 
 // Selector to get the cart items from the state
 const selectCartItems = (state) => state.cart.cart;
@@ -21,6 +25,8 @@ const getTotalCartPrice = createSelector([selectCartItems], (cartItems) => {
 });
 
 function CartDetails() {
+  const { isPending, handleCreateNewOrder } = useCreateNewOrder();
+
   const dispatch = useDispatch();
   const cartItems = useSelector(selectCartItems);
   const totalCartPrice = useSelector(getTotalCartPrice);
@@ -48,6 +54,20 @@ function CartDetails() {
 
   const calculateItemTotal = (item) => {
     return item.quantity * item.price;
+  };
+
+  const handleCheckout = () => {
+    if (memoizedCartItems.length === 0) {
+      return;
+    }
+    const itemsToOrder = memoizedCartItems.map(({ _id, quantity }) => ({
+      itemId: _id,
+      quantity,
+    }));
+
+    handleCreateNewOrder({ menu: itemsToOrder });
+    clearCart();
+    dispatch(resetSelectedItemId());
   };
 
   return (
@@ -170,8 +190,18 @@ function CartDetails() {
             </div>
           </div>
 
-          <button className="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">
-            Check out
+          <button
+            className="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base"
+            onClick={handleCheckout}
+          >
+            {isPending ? <LoginSpinner /> : "Check out"}
+          </button>
+
+          <button
+            className="inline-block rounded-lg bg-red-500 px-6 py-3 text-center text-sm font-semibold text-white outline-none ring-red-300 transition duration-100 hover:bg-red-600 focus-visible:ring active:bg-red-700 md:text-base"
+            onClick={() => dispatch(clearCart())}
+          >
+            Clear Cart
           </button>
         </div>
       </div>

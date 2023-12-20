@@ -1,17 +1,25 @@
 /* eslint-disable react/prop-types */
 import { useSelector } from "react-redux";
 import { FaBars } from "react-icons/fa";
-import { useLogout } from "../authentication/useAuth";
+import { useLogout, useUser } from "../authentication/useAuth";
 import LoginSpinner from "../ui/LoginSpinner";
 import { Link } from "react-router-dom";
 
+import "../index.css";
+import { serverUrl } from "../services/server";
+
 function Header({ setOpen }) {
   const { isPending, logout } = useLogout();
+  const { isLoading, user } = useUser();
 
   const cart = useSelector((state) => state.cart.cart);
 
   // Calculate the count of unique item IDs
   const selectedItemsCount = new Set(cart.map((item) => item._id)).size;
+
+  if (isLoading) {
+    return <LoginSpinner />;
+  }
 
   return (
     <header className="sticky top-0 inset-x-0 flex flex-wrap sm:justify-start sm:flex-nowrap z-[48] w-full bg-white border-b text-sm py-2.5 sm:py-4 lg:ps-64">
@@ -20,14 +28,13 @@ function Header({ setOpen }) {
         aria-label="Global"
       >
         <div className=" flex items-center me-5 lg:me-0 lg:hidden">
-          <img src="logo.png" alt="logo" className="w-10 h-10" />
-          <a
-            className="italic flex-none text-base font-semibold dark:text-dark"
-            href="#"
+          <Link
+            className="italic flex-none text-base font-semibold"
             aria-label="CulinaryCharm Grill"
+            to="/"
           >
             CulinaryCharm Grill
-          </a>
+          </Link>
         </div>
 
         <div className="w-full flex items-center justify-end ms-auto sm:justify-between sm:gap-x-3 sm:order-3">
@@ -82,10 +89,22 @@ function Header({ setOpen }) {
                 className="relative inline-flex justify-center items-center h-[3rem] w-[3.1rem] text-sm font-semibold  bg-white text-gray-800  hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
               >
                 <Link to="/cart" className="relative">
-                  <img src="trolley.png" alt="trolley" className="w-7 h-7" />
+                  <img
+                    src={`${serverUrl}${"trolley.png"}`}
+                    alt="trolley"
+                    className="w-7 h-7"
+                  />
                 </Link>
                 {selectedItemsCount ? (
-                  <span className="absolute top-0 end-0 inline-flex items-center py-0.5 px-1.5 rounded-full text-xs font-medium transform -translate-y-1/2 translate-x-1/2 bg-red-500 text-white">
+                  <span
+                    style={{
+                      animation:
+                        "ping 1.4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+                      transformOrigin: "center",
+                      transform: "scale(1.5)",
+                    }}
+                    className="animate-ping absolute top-0 end-0 inline-flex items-center py-0.5 px-1.5 rounded-full text-sm font-medium transform -translate-y-1/2 translate-x-1/2 bg-red-500 text-white"
+                  >
                     {selectedItemsCount}
                   </span>
                 ) : (
@@ -105,11 +124,14 @@ function Header({ setOpen }) {
               type="button"
               className="w-[2.375rem] h-[2.375rem] inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
             >
-              <img
-                className="inline-block h-[2.375rem] w-[2.375rem] rounded-full ring-2 ring-sky-200"
-                src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
-                alt="Image Description"
-              />
+              <div className="relative">
+                <img
+                  className="inline-block h-[2.375rem] w-[2.375rem] rounded-full ring-2 ring-sky-200"
+                  src={`${serverUrl}${user?.photo}`}
+                  alt="User Profile"
+                />
+                <span className="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-emerald-500 ring-1 ring-white"></span>
+              </div>
             </button>
           </div>
         </div>

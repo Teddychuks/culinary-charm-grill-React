@@ -17,6 +17,8 @@ import ProtectedRoutes from "./authentication/ProtectedRoutes";
 import SignUp from "./authentication/SignUp";
 import ForgotPassword from "./authentication/ForgotPassword";
 import ResetPassword from "./authentication/ResetPassword";
+import Invoice from "./components/Invoice";
+import ProductDetails from "./components/ProductDetails";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -43,12 +45,17 @@ function App() {
             >
               <Route index element={<Navigate replace to="menu" />} />
               <Route path="menu" element={<Menu />} />
+              <Route
+                path="menu_detail/:filter/:itemId"
+                element={<ProductDetails />}
+              />
               <Route path="orders" element={<Orders />} />
               <Route path="admin" element={<Admin />} />
               <Route path="analytics" element={<Analytics />} />
               <Route path="api_documentation" element={<ApiDocumentation />} />
               <Route path="settings" element={<Settings />} />
               <Route path="cart" element={<Cart />} />
+              <Route path="invoice" element={<Invoice />} />
             </Route>
 
             <Route path="sign_in" element={<SignIn />} />
