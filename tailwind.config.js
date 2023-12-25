@@ -1,11 +1,7 @@
 /* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/preline/preline.js",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 
   theme: {
     extend: {
@@ -14,5 +10,4 @@ export default {
       },
     },
   },
-  plugins: [require("preline/plugin")],
 };

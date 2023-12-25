@@ -35,8 +35,8 @@ function UserDetails() {
         ></div>
 
         <div className="flex items-center w-full  lg:w-3/5 shadow-lg border">
-          <div className="w-full">
-            <div className="px-9 ">
+          <div className="w-full ">
+            <div className="px-9  ">
               <h1 className="text-2xl font-semibold tracking-wider text-gray-800 capitalize ">
                 User Settings
               </h1>

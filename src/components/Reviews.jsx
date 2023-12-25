@@ -22,14 +22,14 @@ function Reviews({ ratingsAverage }) {
   if (isFetching) {
     return <p>Loading...</p>;
   }
-  const mainData = reviewsList.data?.reviews;
+  const mainData = reviewsList?.data?.reviews;
 
   const calculatePercentage = (total, current) => {
     return (current / total) * 100;
   };
 
   const validateUserReview = (review) => {
-    return review.user._id === user._id;
+    return review?.user?._id === user?._id;
   };
 
   return (
@@ -100,13 +100,13 @@ function Reviews({ ratingsAverage }) {
                 >
                   <div className="flex gap-2">
                     <img
-                      src={`${serverUrl}${review.user.photo}`}
-                      alt={review.user.name}
+                      src={`${serverUrl}${review?.user?.photo}`}
+                      alt={review?.user?.name}
                       className="inline-block h-[2.375rem] w-[2.375rem] rounded-full ring-2 ring-sky-200"
                     />
                     <div className="flex-col">
                       <span className="block text-sm font-bold">
-                        {review.user.name}
+                        {review?.user?.name}
                       </span>
                       <span className="block text-sm text-gray-500">
                         {new Date(review.createdAt).toLocaleString("en-US", {

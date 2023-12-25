@@ -77,8 +77,8 @@ function ForgotPassword() {
                       </div>
                     </div>
                     <p className="text-xs text-red-600 mt-2" id="email-error">
-                      Please include a valid email address so we can get back to
-                      you with a reset
+                      Please include a valid email address,check your email spam
+                      for reset link
                     </p>
                   </div>
 

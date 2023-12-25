@@ -148,7 +148,7 @@ const SignUp = () => {
                 className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
                 type="submit"
               >
-                {isPending ? <LoginSpinner /> : "Sign in"}
+                {isPending ? <LoginSpinner /> : "Sign Up"}
               </button>
             </form>
             <p className="mt-4 text-gray-600">
