@@ -71,8 +71,6 @@ export async function forgotPassword({ email }) {
 
 export async function resetPassword(token, resetData) {
   const requestData = { ...resetData };
-  console.log(requestData);
-  console.log(token);
   const response = await axios.patch(
     `${serverUrl}user/reset_password/${token}`,
     requestData,
@@ -91,4 +89,21 @@ export async function logout() {
   await axios.get(url);
 
   return null;
+}
+
+export async function changePassword(updateData) {
+  const authToken = localStorage.getItem("token");
+  const requestData = { ...updateData };
+  const response = await axios.patch(
+    `${serverUrl}user/updatemypassword`,
+    requestData,
+    {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${authToken}`,
+      },
+    }
+  );
+
+  return response.data;
 }

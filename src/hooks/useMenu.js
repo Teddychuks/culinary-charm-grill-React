@@ -4,12 +4,16 @@ import { getAllMenu } from "../services/apiMenu";
 import { getMenu } from "../services/apiMenu";
 
 export function useMenuAll(filterOptions, sortOption) {
-  const { isLoading, data: allMenu } = useQuery({
+  const {
+    isLoading,
+    data: allMenu,
+    refetch,
+  } = useQuery({
     queryKey: ["allMenu", filterOptions, sortOption],
     queryFn: () => getAllMenu(filterOptions, sortOption),
   });
 
-  return { isLoading, allMenu };
+  return { isLoading, allMenu, refetch };
 }
 
 export function useMenu(filter, itemId) {

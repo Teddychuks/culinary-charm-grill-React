@@ -1,5 +1,11 @@
+import ChartEngine from "../features/charts/ChartEngine";
+
 function Analytics() {
-  return <div></div>;
+  return (
+    <div>
+      <ChartEngine />
+    </div>
+  );
 }
 
 export default Analytics;

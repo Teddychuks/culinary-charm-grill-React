@@ -1,100 +1,2978 @@
-{
-  "json": {
-    "status": "success",
-    "results": 5,
-    "data": {
-      "reviews": [
-        {
-          "_id": "657eff2fd0469c246c349559",
-          "review": "Decent, but not my favorite.",
-          "rating": 2,
-          "menu": {
-            "_id": "656e347d1fdb19422c8ebecf",
-            "name": "Sweet Potato",
-            "id": "656e347d1fdb19422c8ebecf"
-          },
-          "user": {
-            "_id": "6563857b50c9f0a1c65e1975",
-            "name": "Tony clyde",
-            "photo": "user-4.jpg"
-          },
-          "createdAt": "2023-12-17T14:01:19.064Z",
-          "__v": 0,
-          "id": "657eff2fd0469c246c349559"
+[
+  {
+    "_id": {
+      "$oid": "658441d04126f25b6f5e6d30"
+    },
+    "username": "Smith Row",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebecf"
         },
-        {
-          "_id": "657eff2fd0469c246c349558",
-          "review": "Satisfying meal, will order again.",
-          "rating": 3,
-          "menu": {
-            "_id": "656e347d1fdb19422c8ebecf",
-            "name": "Sweet Potato",
-            "id": "656e347d1fdb19422c8ebecf"
-          },
-          "user": {
-            "_id": "6563857b50c9f0a1c65e1977",
-            "name": "Jennifer Hardy",
-            "photo": "user-6.jpg"
-          },
-          "createdAt": "2023-12-17T14:01:19.064Z",
-          "__v": 0,
-          "id": "657eff2fd0469c246c349558"
-        },
-        {
-          "_id": "657eff2fd0469c246c34955b",
-          "review": "Good portion size, enjoyed it.",
-          "rating": 3,
-          "menu": {
-            "_id": "656e347d1fdb19422c8ebecf",
-            "name": "Sweet Potato",
-            "id": "656e347d1fdb19422c8ebecf"
-          },
-          "user": {
-            "_id": "6563857b50c9f0a1c65e1978",
-            "name": "Mark Riley",
-            "photo": "user-7.jpg"
-          },
-          "createdAt": "2023-12-17T14:01:19.064Z",
-          "__v": 0,
-          "id": "657eff2fd0469c246c34955b"
-        },
-        {
-          "_id": "657eff2fd0469c246c34955a",
-          "review": "Incredible taste, a new favorite!",
-          "rating": 5,
-          "menu": {
-            "_id": "656e347d1fdb19422c8ebecf",
-            "name": "Sweet Potato",
-            "id": "656e347d1fdb19422c8ebecf"
-          },
-          "user": {
-            "_id": "6563857b50c9f0a1c65e1979",
-            "name": "Scott tony",
-            "photo": "user-8.jpg"
-          },
-          "createdAt": "2023-12-17T14:01:19.064Z",
-          "__v": 0,
-          "id": "657eff2fd0469c246c34955a"
-        },
-        {
-          "_id": "657f3351f69d24a4665fe0ee",
-          "review": "Test Review",
-          "rating": 4,
-          "menu": {
-            "_id": "656e347d1fdb19422c8ebecf",
-            "name": "Sweet Potato",
-            "id": "656e347d1fdb19422c8ebecf"
-          },
-          "user": {
-            "_id": "6574b8954dab545869e1c460",
-            "name": "Chukwuka Thaddeus",
-            "photo": "default.jpg"
-          },
-          "createdAt": "2023-12-17T16:39:00.721Z",
-          "__v": 0,
-          "id": "657f3351f69d24a4665fe0ee"
+        "category": "appetizer",
+        "name": "Sweet Potato",
+        "price": 26,
+        "quantity": 5,
+        "itemTotalPrice": 130,
+        "_id": {
+          "$oid": "658441d04126f25b6f5e6d31"
         }
-      ]
-    }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed3"
+        },
+        "category": "appetizer",
+        "name": "Pesto Stuffed",
+        "price": 19,
+        "quantity": 4,
+        "itemTotalPrice": 76,
+        "_id": {
+          "$oid": "658441d04126f25b6f5e6d32"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebecd"
+        },
+        "category": "appetizer",
+        "name": "Caprese Skewers",
+        "price": 22,
+        "quantity": 5,
+        "itemTotalPrice": 110,
+        "_id": {
+          "$oid": "658441d04126f25b6f5e6d33"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 316,
+    "createdAt": {
+      "$date": "2023-11-26T08:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658441eb4126f25b6f5e6d3f"
+    },
+    "username": "Smith Row",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee6"
+        },
+        "category": "pizza",
+        "name": "Bacon Pizza",
+        "price": 50,
+        "quantity": 1,
+        "itemTotalPrice": 50,
+        "_id": {
+          "$oid": "658441eb4126f25b6f5e6d40"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeea"
+        },
+        "category": "pizza",
+        "name": "Spinach Pizza",
+        "price": 52,
+        "quantity": 1,
+        "itemTotalPrice": 52,
+        "_id": {
+          "$oid": "658441eb4126f25b6f5e6d41"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeec"
+        },
+        "category": "pizza",
+        "name": "Pesto Pizza",
+        "price": 58,
+        "quantity": 1,
+        "itemTotalPrice": 58,
+        "_id": {
+          "$oid": "658441eb4126f25b6f5e6d42"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee9"
+        },
+        "category": "pizza",
+        "name": "Caprese Pizza",
+        "price": 60,
+        "quantity": 1,
+        "itemTotalPrice": 60,
+        "_id": {
+          "$oid": "658441eb4126f25b6f5e6d43"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 220,
+    "createdAt": {
+      "$date": "2023-11-27T12:30:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658442014126f25b6f5e6d4b"
+    },
+    "username": "Smith Row",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebede"
+        },
+        "category": "maincourse",
+        "name": "Mast Biryani",
+        "price": 50,
+        "quantity": 1,
+        "itemTotalPrice": 50,
+        "_id": {
+          "$oid": "658442014126f25b6f5e6d4c"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee0"
+        },
+        "category": "maincourse",
+        "name": "Slow-Roasted",
+        "price": 40,
+        "quantity": 1,
+        "itemTotalPrice": 40,
+        "_id": {
+          "$oid": "658442014126f25b6f5e6d4d"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee2"
+        },
+        "category": "maincourse",
+        "name": "Mushrooms Yogurt",
+        "price": 52,
+        "quantity": 1,
+        "itemTotalPrice": 52,
+        "_id": {
+          "$oid": "658442014126f25b6f5e6d4e"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 142,
+    "createdAt": {
+      "$date": "2023-11-28T16:45:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658442144126f25b6f5e6d56"
+    },
+    "username": "Smith Row",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef4"
+        },
+        "category": "cocktail",
+        "name": "Pina Colada",
+        "price": 11,
+        "quantity": 1,
+        "itemTotalPrice": 11,
+        "_id": {
+          "$oid": "658442144126f25b6f5e6d57"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef8"
+        },
+        "category": "cocktail",
+        "name": "Daiquiri",
+        "price": 10,
+        "quantity": 1,
+        "itemTotalPrice": 10,
+        "_id": {
+          "$oid": "658442144126f25b6f5e6d58"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebefa"
+        },
+        "category": "cocktail",
+        "name": "Minty Blueberry",
+        "price": 15,
+        "quantity": 1,
+        "itemTotalPrice": 15,
+        "_id": {
+          "$oid": "658442144126f25b6f5e6d59"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 36,
+    "createdAt": {
+      "$date": "2023-11-29T20:15:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658442474126f25b6f5e6d65"
+    },
+    "username": "Mark Jones",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef4"
+        },
+        "category": "cocktail",
+        "name": "Pina Colada",
+        "price": 11,
+        "quantity": 1,
+        "itemTotalPrice": 11,
+        "_id": {
+          "$oid": "658442474126f25b6f5e6d66"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef3"
+        },
+        "category": "cocktail",
+        "name": "Mojito",
+        "price": 10,
+        "quantity": 4,
+        "itemTotalPrice": 40,
+        "_id": {
+          "$oid": "658442474126f25b6f5e6d67"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebefa"
+        },
+        "category": "cocktail",
+        "name": "Minty Blueberry",
+        "price": 15,
+        "quantity": 1,
+        "itemTotalPrice": 15,
+        "_id": {
+          "$oid": "658442474126f25b6f5e6d68"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebefb"
+        },
+        "category": "cocktail",
+        "name": "Lavender Lemon",
+        "price": 19,
+        "quantity": 3,
+        "itemTotalPrice": 57,
+        "_id": {
+          "$oid": "658442474126f25b6f5e6d69"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 123,
+    "createdAt": {
+      "$date": "2023-11-30T23:45:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658442874126f25b6f5e6d78"
+    },
+    "username": "Mark Jones",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee8"
+        },
+        "category": "pizza",
+        "name": "Chicken Pizza",
+        "price": 54,
+        "quantity": 6,
+        "itemTotalPrice": 324,
+        "_id": {
+          "$oid": "658442874126f25b6f5e6d79"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeeb"
+        },
+        "category": "pizza",
+        "name": "Prosciutto Pizza",
+        "price": 64,
+        "quantity": 1,
+        "itemTotalPrice": 64,
+        "_id": {
+          "$oid": "658442874126f25b6f5e6d7a"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeec"
+        },
+        "category": "pizza",
+        "name": "Pesto Pizza",
+        "price": 58,
+        "quantity": 7,
+        "itemTotalPrice": 406,
+        "_id": {
+          "$oid": "658442874126f25b6f5e6d7b"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee9"
+        },
+        "category": "pizza",
+        "name": "Caprese Pizza",
+        "price": 60,
+        "quantity": 8,
+        "itemTotalPrice": 480,
+        "_id": {
+          "$oid": "658442874126f25b6f5e6d7c"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 1274,
+    "createdAt": {
+      "$date": "2023-12-01T08:30:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658442a14126f25b6f5e6d84"
+    },
+    "username": "Mark Jones",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebecf"
+        },
+        "category": "appetizer",
+        "name": "Sweet Potato",
+        "price": 26,
+        "quantity": 9,
+        "itemTotalPrice": 234,
+        "_id": {
+          "$oid": "658442a14126f25b6f5e6d85"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed3"
+        },
+        "category": "appetizer",
+        "name": "Pesto Stuffed",
+        "price": 19,
+        "quantity": 1,
+        "itemTotalPrice": 19,
+        "_id": {
+          "$oid": "658442a14126f25b6f5e6d86"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed8"
+        },
+        "category": "appetizer",
+        "name": "Teriyaki Glazed ",
+        "price": 29,
+        "quantity": 14,
+        "itemTotalPrice": 406,
+        "_id": {
+          "$oid": "658442a14126f25b6f5e6d87"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed5"
+        },
+        "category": "appetizer",
+        "name": "Avocado Shrimp",
+        "price": 25,
+        "quantity": 12,
+        "itemTotalPrice": 300,
+        "_id": {
+          "$oid": "658442a14126f25b6f5e6d88"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 959,
+    "createdAt": {
+      "$date": "2023-12-02T14:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658442f94126f25b6f5e6d9c"
+    },
+    "username": "Jane Clark",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed3"
+        },
+        "category": "appetizer",
+        "name": "Pesto Stuffed",
+        "price": 19,
+        "quantity": 7,
+        "itemTotalPrice": 133,
+        "_id": {
+          "$oid": "658442f94126f25b6f5e6d9d"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebece"
+        },
+        "category": "appetizer",
+        "name": "Mushroom Bruschetta",
+        "price": 19,
+        "quantity": 6,
+        "itemTotalPrice": 114,
+        "_id": {
+          "$oid": "658442f94126f25b6f5e6d9e"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebecd"
+        },
+        "category": "appetizer",
+        "name": "Caprese Skewers",
+        "price": 22,
+        "quantity": 4,
+        "itemTotalPrice": 88,
+        "_id": {
+          "$oid": "658442f94126f25b6f5e6d9f"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed4"
+        },
+        "category": "appetizer",
+        "name": "Spinach Artichoke",
+        "price": 22,
+        "quantity": 1,
+        "itemTotalPrice": 22,
+        "_id": {
+          "$oid": "658442f94126f25b6f5e6da0"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed8"
+        },
+        "category": "appetizer",
+        "name": "Teriyaki Glazed ",
+        "price": 29,
+        "quantity": 1,
+        "itemTotalPrice": 29,
+        "_id": {
+          "$oid": "658442f94126f25b6f5e6da1"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 386,
+    "createdAt": {
+      "$date": "2023-12-03T18:20:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658443384126f25b6f5e6dc1"
+    },
+    "username": "Jane Clark",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee8"
+        },
+        "category": "pizza",
+        "name": "Chicken Pizza",
+        "price": 54,
+        "quantity": 11,
+        "itemTotalPrice": 594,
+        "_id": {
+          "$oid": "658443384126f25b6f5e6dc2"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeef"
+        },
+        "category": "pizza",
+        "name": "Meat Pizza",
+        "price": 70,
+        "quantity": 15,
+        "itemTotalPrice": 1050,
+        "_id": {
+          "$oid": "658443384126f25b6f5e6dc3"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedc"
+        },
+        "category": "maincourse",
+        "name": "Habanero BBQ",
+        "price": 44,
+        "quantity": 7,
+        "itemTotalPrice": 308,
+        "_id": {
+          "$oid": "658443384126f25b6f5e6dc4"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedb"
+        },
+        "category": "maincourse",
+        "name": "Grilled Pork",
+        "price": 48,
+        "quantity": 1,
+        "itemTotalPrice": 48,
+        "_id": {
+          "$oid": "658443384126f25b6f5e6dc5"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee0"
+        },
+        "category": "maincourse",
+        "name": "Slow-Roasted",
+        "price": 40,
+        "quantity": 1,
+        "itemTotalPrice": 40,
+        "_id": {
+          "$oid": "658443384126f25b6f5e6dc6"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee1"
+        },
+        "category": "maincourse",
+        "name": "Lamb Chops",
+        "price": 56,
+        "quantity": 1,
+        "itemTotalPrice": 56,
+        "_id": {
+          "$oid": "658443384126f25b6f5e6dc7"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 2096,
+    "createdAt": {
+      "$date": "2023-12-04T21:45:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658443814126f25b6f5e6dd8"
+    },
+    "username": "Jennifer Hardy",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef4"
+        },
+        "category": "cocktail",
+        "name": "Pina Colada",
+        "price": 11,
+        "quantity": 15,
+        "itemTotalPrice": 165,
+        "_id": {
+          "$oid": "658443814126f25b6f5e6dd9"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef5"
+        },
+        "category": "cocktail",
+        "name": "Old Fashioned",
+        "price": 13,
+        "quantity": 7,
+        "itemTotalPrice": 91,
+        "_id": {
+          "$oid": "658443814126f25b6f5e6dda"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef8"
+        },
+        "category": "cocktail",
+        "name": "Daiquiri",
+        "price": 10,
+        "quantity": 11,
+        "itemTotalPrice": 110,
+        "_id": {
+          "$oid": "658443814126f25b6f5e6ddb"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef7"
+        },
+        "category": "cocktail",
+        "name": "Negroni",
+        "price": 15,
+        "quantity": 7,
+        "itemTotalPrice": 105,
+        "_id": {
+          "$oid": "658443814126f25b6f5e6ddc"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef3"
+        },
+        "category": "cocktail",
+        "name": "Mojito",
+        "price": 10,
+        "quantity": 1,
+        "itemTotalPrice": 10,
+        "_id": {
+          "$oid": "658443814126f25b6f5e6ddd"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedd"
+        },
+        "category": "maincourse",
+        "name": "Salad Roast",
+        "price": 52,
+        "quantity": 1,
+        "itemTotalPrice": 52,
+        "_id": {
+          "$oid": "658443814126f25b6f5e6dde"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed9"
+        },
+        "category": "maincourse",
+        "name": "Cedar Plank Salmon",
+        "price": 42,
+        "quantity": 1,
+        "itemTotalPrice": 42,
+        "_id": {
+          "$oid": "658443814126f25b6f5e6ddf"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee2"
+        },
+        "category": "maincourse",
+        "name": "Mushrooms Yogurt",
+        "price": 52,
+        "quantity": 6,
+        "itemTotalPrice": 312,
+        "_id": {
+          "$oid": "658443814126f25b6f5e6de0"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 887,
+    "createdAt": {
+      "$date": "2023-12-05T09:10:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658443db4126f25b6f5e6dfd"
+    },
+    "username": "Tony clyde",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee6"
+        },
+        "category": "pizza",
+        "name": "Bacon Pizza",
+        "price": 50,
+        "quantity": 8,
+        "itemTotalPrice": 400,
+        "_id": {
+          "$oid": "658443db4126f25b6f5e6dfe"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeea"
+        },
+        "category": "pizza",
+        "name": "Spinach Pizza",
+        "price": 52,
+        "quantity": 7,
+        "itemTotalPrice": 364,
+        "_id": {
+          "$oid": "658443db4126f25b6f5e6dff"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeec"
+        },
+        "category": "pizza",
+        "name": "Pesto Pizza",
+        "price": 58,
+        "quantity": 8,
+        "itemTotalPrice": 464,
+        "_id": {
+          "$oid": "658443db4126f25b6f5e6e00"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee5"
+        },
+        "category": "pizza",
+        "name": "Tomatoes Pizza",
+        "price": 62,
+        "quantity": 8,
+        "itemTotalPrice": 496,
+        "_id": {
+          "$oid": "658443db4126f25b6f5e6e01"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed9"
+        },
+        "category": "maincourse",
+        "name": "Cedar Plank Salmon",
+        "price": 42,
+        "quantity": 1,
+        "itemTotalPrice": 42,
+        "_id": {
+          "$oid": "658443db4126f25b6f5e6e02"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedc"
+        },
+        "category": "maincourse",
+        "name": "Habanero BBQ",
+        "price": 44,
+        "quantity": 1,
+        "itemTotalPrice": 44,
+        "_id": {
+          "$oid": "658443db4126f25b6f5e6e03"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee0"
+        },
+        "category": "maincourse",
+        "name": "Slow-Roasted",
+        "price": 40,
+        "quantity": 8,
+        "itemTotalPrice": 320,
+        "_id": {
+          "$oid": "658443db4126f25b6f5e6e04"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee2"
+        },
+        "category": "maincourse",
+        "name": "Mushrooms Yogurt",
+        "price": 52,
+        "quantity": 1,
+        "itemTotalPrice": 52,
+        "_id": {
+          "$oid": "658443db4126f25b6f5e6e05"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef1"
+        },
+        "category": "cocktail",
+        "name": "Margarita",
+        "price": 12,
+        "quantity": 1,
+        "itemTotalPrice": 12,
+        "_id": {
+          "$oid": "658443db4126f25b6f5e6e06"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef4"
+        },
+        "category": "cocktail",
+        "name": "Pina Colada",
+        "price": 11,
+        "quantity": 1,
+        "itemTotalPrice": 11,
+        "_id": {
+          "$oid": "658443db4126f25b6f5e6e07"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef9"
+        },
+        "category": "cocktail",
+        "name": "Savory cocktail",
+        "price": 14,
+        "quantity": 7,
+        "itemTotalPrice": 98,
+        "_id": {
+          "$oid": "658443db4126f25b6f5e6e08"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 2303,
+    "createdAt": {
+      "$date": "2023-12-06T13:30:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658444444126f25b6f5e6e1e"
+    },
+    "username": "Scott tony",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef4"
+        },
+        "category": "cocktail",
+        "name": "Pina Colada",
+        "price": 11,
+        "quantity": 1,
+        "itemTotalPrice": 11,
+        "_id": {
+          "$oid": "658444444126f25b6f5e6e1f"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef8"
+        },
+        "category": "cocktail",
+        "name": "Daiquiri",
+        "price": 10,
+        "quantity": 1,
+        "itemTotalPrice": 10,
+        "_id": {
+          "$oid": "658444444126f25b6f5e6e20"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebefc"
+        },
+        "category": "cocktail",
+        "name": "Mozzarella Sticks",
+        "price": 15,
+        "quantity": 1,
+        "itemTotalPrice": 15,
+        "_id": {
+          "$oid": "658444444126f25b6f5e6e21"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedd"
+        },
+        "category": "maincourse",
+        "name": "Salad Roast",
+        "price": 52,
+        "quantity": 1,
+        "itemTotalPrice": 52,
+        "_id": {
+          "$oid": "658444444126f25b6f5e6e22"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed9"
+        },
+        "category": "maincourse",
+        "name": "Cedar Plank Salmon",
+        "price": 42,
+        "quantity": 1,
+        "itemTotalPrice": 42,
+        "_id": {
+          "$oid": "658444444126f25b6f5e6e23"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedf"
+        },
+        "category": "maincourse",
+        "name": "Tamarind-Glazed ",
+        "price": 54,
+        "quantity": 1,
+        "itemTotalPrice": 54,
+        "_id": {
+          "$oid": "658444444126f25b6f5e6e24"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeed"
+        },
+        "category": "pizza",
+        "name": "Sausage Pizza",
+        "price": 66,
+        "quantity": 1,
+        "itemTotalPrice": 66,
+        "_id": {
+          "$oid": "658444444126f25b6f5e6e25"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee6"
+        },
+        "category": "pizza",
+        "name": "Bacon Pizza",
+        "price": 50,
+        "quantity": 1,
+        "itemTotalPrice": 50,
+        "_id": {
+          "$oid": "658444444126f25b6f5e6e26"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed0"
+        },
+        "category": "appetizer",
+        "name": "Brussels Sprouts",
+        "price": 23,
+        "quantity": 1,
+        "itemTotalPrice": 23,
+        "_id": {
+          "$oid": "658444444126f25b6f5e6e27"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebece"
+        },
+        "category": "appetizer",
+        "name": "Mushroom Bruschetta",
+        "price": 19,
+        "quantity": 1,
+        "itemTotalPrice": 19,
+        "_id": {
+          "$oid": "658444444126f25b6f5e6e28"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebecd"
+        },
+        "category": "appetizer",
+        "name": "Caprese Skewers",
+        "price": 22,
+        "quantity": 1,
+        "itemTotalPrice": 22,
+        "_id": {
+          "$oid": "658444444126f25b6f5e6e29"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 364,
+    "createdAt": {
+      "$date": "2023-12-07T17:50:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6584446e4126f25b6f5e6e31"
+    },
+    "username": "Scott tony",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebecf"
+        },
+        "category": "appetizer",
+        "name": "Sweet Potato",
+        "price": 26,
+        "quantity": 10,
+        "itemTotalPrice": 260,
+        "_id": {
+          "$oid": "6584446e4126f25b6f5e6e32"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed3"
+        },
+        "category": "appetizer",
+        "name": "Pesto Stuffed",
+        "price": 19,
+        "quantity": 1,
+        "itemTotalPrice": 19,
+        "_id": {
+          "$oid": "6584446e4126f25b6f5e6e33"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebecd"
+        },
+        "category": "appetizer",
+        "name": "Caprese Skewers",
+        "price": 22,
+        "quantity": 9,
+        "itemTotalPrice": 198,
+        "_id": {
+          "$oid": "6584446e4126f25b6f5e6e34"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed6"
+        },
+        "category": "appetizer",
+        "name": "Stuffed Jalapeños",
+        "price": 28,
+        "quantity": 20,
+        "itemTotalPrice": 560,
+        "_id": {
+          "$oid": "6584446e4126f25b6f5e6e35"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 1037,
+    "createdAt": {
+      "$date": "2023-12-21T13:58:06.244Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658445344126f25b6f5e6e6d"
+    },
+    "username": "Mark Riley",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed2"
+        },
+        "category": "appetizer",
+        "name": "Cucumber Feta",
+        "price": 18,
+        "quantity": 11,
+        "itemTotalPrice": 198,
+        "_id": {
+          "$oid": "658445344126f25b6f5e6e6e"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed7"
+        },
+        "category": "appetizer",
+        "name": "Crispy Zucchini",
+        "price": 27,
+        "quantity": 11,
+        "itemTotalPrice": 297,
+        "_id": {
+          "$oid": "658445344126f25b6f5e6e6f"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed8"
+        },
+        "category": "appetizer",
+        "name": "Teriyaki Glazed ",
+        "price": 29,
+        "quantity": 11,
+        "itemTotalPrice": 319,
+        "_id": {
+          "$oid": "658445344126f25b6f5e6e70"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeea"
+        },
+        "category": "pizza",
+        "name": "Spinach Pizza",
+        "price": 52,
+        "quantity": 1,
+        "itemTotalPrice": 52,
+        "_id": {
+          "$oid": "658445344126f25b6f5e6e71"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeec"
+        },
+        "category": "pizza",
+        "name": "Pesto Pizza",
+        "price": 58,
+        "quantity": 13,
+        "itemTotalPrice": 754,
+        "_id": {
+          "$oid": "658445344126f25b6f5e6e72"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeeb"
+        },
+        "category": "pizza",
+        "name": "Prosciutto Pizza",
+        "price": 64,
+        "quantity": 1,
+        "itemTotalPrice": 64,
+        "_id": {
+          "$oid": "658445344126f25b6f5e6e73"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedd"
+        },
+        "category": "maincourse",
+        "name": "Salad Roast",
+        "price": 52,
+        "quantity": 1,
+        "itemTotalPrice": 52,
+        "_id": {
+          "$oid": "658445344126f25b6f5e6e74"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedf"
+        },
+        "category": "maincourse",
+        "name": "Tamarind-Glazed ",
+        "price": 54,
+        "quantity": 13,
+        "itemTotalPrice": 702,
+        "_id": {
+          "$oid": "658445344126f25b6f5e6e75"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedb"
+        },
+        "category": "maincourse",
+        "name": "Grilled Pork",
+        "price": 48,
+        "quantity": 1,
+        "itemTotalPrice": 48,
+        "_id": {
+          "$oid": "658445344126f25b6f5e6e76"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef4"
+        },
+        "category": "cocktail",
+        "name": "Pina Colada",
+        "price": 11,
+        "quantity": 1,
+        "itemTotalPrice": 11,
+        "_id": {
+          "$oid": "658445344126f25b6f5e6e77"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef7"
+        },
+        "category": "cocktail",
+        "name": "Negroni",
+        "price": 15,
+        "quantity": 10,
+        "itemTotalPrice": 150,
+        "_id": {
+          "$oid": "658445344126f25b6f5e6e78"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef9"
+        },
+        "category": "cocktail",
+        "name": "Savory cocktail",
+        "price": 14,
+        "quantity": 1,
+        "itemTotalPrice": 14,
+        "_id": {
+          "$oid": "658445344126f25b6f5e6e79"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef2"
+        },
+        "category": "cocktail",
+        "name": "Martini",
+        "price": 14,
+        "quantity": 7,
+        "itemTotalPrice": 98,
+        "_id": {
+          "$oid": "658445344126f25b6f5e6e7a"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 2759,
+    "createdAt": {
+      "$date": "2023-12-08T22:15:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658445dc4126f25b6f5e6ea9"
+    },
+    "username": "John pope",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed3"
+        },
+        "category": "appetizer",
+        "name": "Pesto Stuffed",
+        "price": 19,
+        "quantity": 8,
+        "itemTotalPrice": 152,
+        "_id": {
+          "$oid": "658445dc4126f25b6f5e6eaa"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebecd"
+        },
+        "category": "appetizer",
+        "name": "Caprese Skewers",
+        "price": 22,
+        "quantity": 15,
+        "itemTotalPrice": 330,
+        "_id": {
+          "$oid": "658445dc4126f25b6f5e6eab"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedc"
+        },
+        "category": "maincourse",
+        "name": "Habanero BBQ",
+        "price": 44,
+        "quantity": 14,
+        "itemTotalPrice": 616,
+        "_id": {
+          "$oid": "658445dc4126f25b6f5e6eac"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed9"
+        },
+        "category": "maincourse",
+        "name": "Cedar Plank Salmon",
+        "price": 42,
+        "quantity": 1,
+        "itemTotalPrice": 42,
+        "_id": {
+          "$oid": "658445dc4126f25b6f5e6ead"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee1"
+        },
+        "category": "maincourse",
+        "name": "Lamb Chops",
+        "price": 56,
+        "quantity": 10,
+        "itemTotalPrice": 560,
+        "_id": {
+          "$oid": "658445dc4126f25b6f5e6eae"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee3"
+        },
+        "category": "maincourse",
+        "name": "Pomegranate Glazed",
+        "price": 60,
+        "quantity": 1,
+        "itemTotalPrice": 60,
+        "_id": {
+          "$oid": "658445dc4126f25b6f5e6eaf"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef4"
+        },
+        "category": "cocktail",
+        "name": "Pina Colada",
+        "price": 11,
+        "quantity": 8,
+        "itemTotalPrice": 88,
+        "_id": {
+          "$oid": "658445dc4126f25b6f5e6eb0"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef2"
+        },
+        "category": "cocktail",
+        "name": "Martini",
+        "price": 14,
+        "quantity": 1,
+        "itemTotalPrice": 14,
+        "_id": {
+          "$oid": "658445dc4126f25b6f5e6eb1"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef8"
+        },
+        "category": "cocktail",
+        "name": "Daiquiri",
+        "price": 10,
+        "quantity": 9,
+        "itemTotalPrice": 90,
+        "_id": {
+          "$oid": "658445dc4126f25b6f5e6eb2"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebefb"
+        },
+        "category": "cocktail",
+        "name": "Lavender Lemon",
+        "price": 19,
+        "quantity": 1,
+        "itemTotalPrice": 19,
+        "_id": {
+          "$oid": "658445dc4126f25b6f5e6eb3"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef3"
+        },
+        "category": "cocktail",
+        "name": "Mojito",
+        "price": 10,
+        "quantity": 9,
+        "itemTotalPrice": 90,
+        "_id": {
+          "$oid": "658445dc4126f25b6f5e6eb4"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 2061,
+    "createdAt": {
+      "$date": "2023-12-09T07:40:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658446a54126f25b6f5e6ed3"
+    },
+    "username": "Liam Grenberg",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebece"
+        },
+        "category": "appetizer",
+        "name": "Mushroom Bruschetta",
+        "price": 19,
+        "quantity": 1,
+        "itemTotalPrice": 19,
+        "_id": {
+          "$oid": "658446a54126f25b6f5e6ed4"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebecd"
+        },
+        "category": "appetizer",
+        "name": "Caprese Skewers",
+        "price": 22,
+        "quantity": 6,
+        "itemTotalPrice": 132,
+        "_id": {
+          "$oid": "658446a54126f25b6f5e6ed5"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed4"
+        },
+        "category": "appetizer",
+        "name": "Spinach Artichoke",
+        "price": 22,
+        "quantity": 12,
+        "itemTotalPrice": 264,
+        "_id": {
+          "$oid": "658446a54126f25b6f5e6ed6"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee8"
+        },
+        "category": "pizza",
+        "name": "Chicken Pizza",
+        "price": 54,
+        "quantity": 10,
+        "itemTotalPrice": 540,
+        "_id": {
+          "$oid": "658446a54126f25b6f5e6ed7"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee9"
+        },
+        "category": "pizza",
+        "name": "Caprese Pizza",
+        "price": 60,
+        "quantity": 9,
+        "itemTotalPrice": 540,
+        "_id": {
+          "$oid": "658446a54126f25b6f5e6ed8"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeec"
+        },
+        "category": "pizza",
+        "name": "Pesto Pizza",
+        "price": 58,
+        "quantity": 1,
+        "itemTotalPrice": 58,
+        "_id": {
+          "$oid": "658446a54126f25b6f5e6ed9"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef0"
+        },
+        "category": "pizza",
+        "name": "Pizza Ricotta",
+        "price": 58,
+        "quantity": 1,
+        "itemTotalPrice": 58,
+        "_id": {
+          "$oid": "658446a54126f25b6f5e6eda"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee5"
+        },
+        "category": "pizza",
+        "name": "Tomatoes Pizza",
+        "price": 62,
+        "quantity": 1,
+        "itemTotalPrice": 62,
+        "_id": {
+          "$oid": "658446a54126f25b6f5e6edb"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedd"
+        },
+        "category": "maincourse",
+        "name": "Salad Roast",
+        "price": 52,
+        "quantity": 1,
+        "itemTotalPrice": 52,
+        "_id": {
+          "$oid": "658446a54126f25b6f5e6edc"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee0"
+        },
+        "category": "maincourse",
+        "name": "Slow-Roasted",
+        "price": 40,
+        "quantity": 1,
+        "itemTotalPrice": 40,
+        "_id": {
+          "$oid": "658446a54126f25b6f5e6edd"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedb"
+        },
+        "category": "maincourse",
+        "name": "Grilled Pork",
+        "price": 48,
+        "quantity": 1,
+        "itemTotalPrice": 48,
+        "_id": {
+          "$oid": "658446a54126f25b6f5e6ede"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee4"
+        },
+        "category": "maincourse",
+        "name": "Saffron-infused",
+        "price": 65,
+        "quantity": 1,
+        "itemTotalPrice": 65,
+        "_id": {
+          "$oid": "658446a54126f25b6f5e6edf"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef4"
+        },
+        "category": "cocktail",
+        "name": "Pina Colada",
+        "price": 11,
+        "quantity": 1,
+        "itemTotalPrice": 11,
+        "_id": {
+          "$oid": "658446a54126f25b6f5e6ee0"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef7"
+        },
+        "category": "cocktail",
+        "name": "Negroni",
+        "price": 15,
+        "quantity": 1,
+        "itemTotalPrice": 15,
+        "_id": {
+          "$oid": "658446a54126f25b6f5e6ee1"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef3"
+        },
+        "category": "cocktail",
+        "name": "Mojito",
+        "price": 10,
+        "quantity": 1,
+        "itemTotalPrice": 10,
+        "_id": {
+          "$oid": "658446a54126f25b6f5e6ee2"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebefb"
+        },
+        "category": "cocktail",
+        "name": "Lavender Lemon",
+        "price": 19,
+        "quantity": 1,
+        "itemTotalPrice": 19,
+        "_id": {
+          "$oid": "658446a54126f25b6f5e6ee3"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef2"
+        },
+        "category": "cocktail",
+        "name": "Martini",
+        "price": 14,
+        "quantity": 10,
+        "itemTotalPrice": 140,
+        "_id": {
+          "$oid": "658446a54126f25b6f5e6ee4"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 2073,
+    "createdAt": {
+      "$date": "2023-12-10T11:55:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658447434126f25b6f5e6f35"
+    },
+    "username": "Smith Row",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed8"
+        },
+        "category": "appetizer",
+        "name": "Teriyaki Glazed ",
+        "price": 29,
+        "quantity": 1,
+        "itemTotalPrice": 29,
+        "_id": {
+          "$oid": "658447434126f25b6f5e6f36"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed7"
+        },
+        "category": "appetizer",
+        "name": "Crispy Zucchini",
+        "price": 27,
+        "quantity": 1,
+        "itemTotalPrice": 27,
+        "_id": {
+          "$oid": "658447434126f25b6f5e6f37"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebecd"
+        },
+        "category": "appetizer",
+        "name": "Caprese Skewers",
+        "price": 22,
+        "quantity": 1,
+        "itemTotalPrice": 22,
+        "_id": {
+          "$oid": "658447434126f25b6f5e6f38"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebece"
+        },
+        "category": "appetizer",
+        "name": "Mushroom Bruschetta",
+        "price": 19,
+        "quantity": 1,
+        "itemTotalPrice": 19,
+        "_id": {
+          "$oid": "658447434126f25b6f5e6f39"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed9"
+        },
+        "category": "maincourse",
+        "name": "Cedar Plank Salmon",
+        "price": 42,
+        "quantity": 1,
+        "itemTotalPrice": 42,
+        "_id": {
+          "$oid": "658447434126f25b6f5e6f3a"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedc"
+        },
+        "category": "maincourse",
+        "name": "Habanero BBQ",
+        "price": 44,
+        "quantity": 1,
+        "itemTotalPrice": 44,
+        "_id": {
+          "$oid": "658447434126f25b6f5e6f3b"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedb"
+        },
+        "category": "maincourse",
+        "name": "Grilled Pork",
+        "price": 48,
+        "quantity": 1,
+        "itemTotalPrice": 48,
+        "_id": {
+          "$oid": "658447434126f25b6f5e6f3c"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee0"
+        },
+        "category": "maincourse",
+        "name": "Slow-Roasted",
+        "price": 40,
+        "quantity": 1,
+        "itemTotalPrice": 40,
+        "_id": {
+          "$oid": "658447434126f25b6f5e6f3d"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee2"
+        },
+        "category": "maincourse",
+        "name": "Mushrooms Yogurt",
+        "price": 52,
+        "quantity": 1,
+        "itemTotalPrice": 52,
+        "_id": {
+          "$oid": "658447434126f25b6f5e6f3e"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef4"
+        },
+        "category": "cocktail",
+        "name": "Pina Colada",
+        "price": 11,
+        "quantity": 1,
+        "itemTotalPrice": 11,
+        "_id": {
+          "$oid": "658447434126f25b6f5e6f3f"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef3"
+        },
+        "category": "cocktail",
+        "name": "Mojito",
+        "price": 10,
+        "quantity": 1,
+        "itemTotalPrice": 10,
+        "_id": {
+          "$oid": "658447434126f25b6f5e6f40"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef9"
+        },
+        "category": "cocktail",
+        "name": "Savory cocktail",
+        "price": 14,
+        "quantity": 1,
+        "itemTotalPrice": 14,
+        "_id": {
+          "$oid": "658447434126f25b6f5e6f41"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebefa"
+        },
+        "category": "cocktail",
+        "name": "Minty Blueberry",
+        "price": 15,
+        "quantity": 1,
+        "itemTotalPrice": 15,
+        "_id": {
+          "$oid": "658447434126f25b6f5e6f42"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 373,
+    "createdAt": {
+      "$date": "2023-12-11T16:10:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658448584126f25b6f5e6f68"
+    },
+    "username": "Mark Jones",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef4"
+        },
+        "category": "cocktail",
+        "name": "Pina Colada",
+        "price": 11,
+        "quantity": 12,
+        "itemTotalPrice": 132,
+        "_id": {
+          "$oid": "658448584126f25b6f5e6f69"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebecd"
+        },
+        "category": "appetizer",
+        "name": "Caprese Skewers",
+        "price": 22,
+        "quantity": 15,
+        "itemTotalPrice": 330,
+        "_id": {
+          "$oid": "658448584126f25b6f5e6f6a"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed3"
+        },
+        "category": "appetizer",
+        "name": "Pesto Stuffed",
+        "price": 19,
+        "quantity": 13,
+        "itemTotalPrice": 247,
+        "_id": {
+          "$oid": "658448584126f25b6f5e6f6b"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed6"
+        },
+        "category": "appetizer",
+        "name": "Stuffed Jalapeños",
+        "price": 28,
+        "quantity": 8,
+        "itemTotalPrice": 224,
+        "_id": {
+          "$oid": "658448584126f25b6f5e6f6c"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed8"
+        },
+        "category": "appetizer",
+        "name": "Teriyaki Glazed ",
+        "price": 29,
+        "quantity": 1,
+        "itemTotalPrice": 29,
+        "_id": {
+          "$oid": "658448584126f25b6f5e6f6d"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee6"
+        },
+        "category": "pizza",
+        "name": "Bacon Pizza",
+        "price": 50,
+        "quantity": 1,
+        "itemTotalPrice": 50,
+        "_id": {
+          "$oid": "658448584126f25b6f5e6f6e"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee8"
+        },
+        "category": "pizza",
+        "name": "Chicken Pizza",
+        "price": 54,
+        "quantity": 1,
+        "itemTotalPrice": 54,
+        "_id": {
+          "$oid": "658448584126f25b6f5e6f6f"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeea"
+        },
+        "category": "pizza",
+        "name": "Spinach Pizza",
+        "price": 52,
+        "quantity": 1,
+        "itemTotalPrice": 52,
+        "_id": {
+          "$oid": "658448584126f25b6f5e6f70"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeee"
+        },
+        "category": "pizza",
+        "name": "Margarita Pizza ",
+        "price": 62,
+        "quantity": 1,
+        "itemTotalPrice": 62,
+        "_id": {
+          "$oid": "658448584126f25b6f5e6f71"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeef"
+        },
+        "category": "pizza",
+        "name": "Meat Pizza",
+        "price": 70,
+        "quantity": 1,
+        "itemTotalPrice": 70,
+        "_id": {
+          "$oid": "658448584126f25b6f5e6f72"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedd"
+        },
+        "category": "maincourse",
+        "name": "Salad Roast",
+        "price": 52,
+        "quantity": 1,
+        "itemTotalPrice": 52,
+        "_id": {
+          "$oid": "658448584126f25b6f5e6f73"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeda"
+        },
+        "category": "maincourse",
+        "name": "Braised Chicken ",
+        "price": 40,
+        "quantity": 1,
+        "itemTotalPrice": 40,
+        "_id": {
+          "$oid": "658448584126f25b6f5e6f74"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebede"
+        },
+        "category": "maincourse",
+        "name": "Mast Biryani",
+        "price": 50,
+        "quantity": 1,
+        "itemTotalPrice": 50,
+        "_id": {
+          "$oid": "658448584126f25b6f5e6f75"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee3"
+        },
+        "category": "maincourse",
+        "name": "Pomegranate Glazed",
+        "price": 60,
+        "quantity": 11,
+        "itemTotalPrice": 660,
+        "_id": {
+          "$oid": "658448584126f25b6f5e6f76"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 2052,
+    "createdAt": {
+      "$date": "2023-12-12T20:25:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658448a34126f25b6f5e6fb2"
+    },
+    "username": "Jane Clark",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed2"
+        },
+        "category": "appetizer",
+        "name": "Cucumber Feta",
+        "price": 18,
+        "quantity": 6,
+        "itemTotalPrice": 108,
+        "_id": {
+          "$oid": "658448a34126f25b6f5e6fb3"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed7"
+        },
+        "category": "appetizer",
+        "name": "Crispy Zucchini",
+        "price": 27,
+        "quantity": 5,
+        "itemTotalPrice": 135,
+        "_id": {
+          "$oid": "658448a34126f25b6f5e6fb4"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed6"
+        },
+        "category": "appetizer",
+        "name": "Stuffed Jalapeños",
+        "price": 28,
+        "quantity": 1,
+        "itemTotalPrice": 28,
+        "_id": {
+          "$oid": "658448a34126f25b6f5e6fb5"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed8"
+        },
+        "category": "appetizer",
+        "name": "Teriyaki Glazed ",
+        "price": 29,
+        "quantity": 6,
+        "itemTotalPrice": 174,
+        "_id": {
+          "$oid": "658448a34126f25b6f5e6fb6"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee8"
+        },
+        "category": "pizza",
+        "name": "Chicken Pizza",
+        "price": 54,
+        "quantity": 1,
+        "itemTotalPrice": 54,
+        "_id": {
+          "$oid": "658448a34126f25b6f5e6fb7"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee7"
+        },
+        "category": "pizza",
+        "name": "Hawaiian Pizza",
+        "price": 56,
+        "quantity": 1,
+        "itemTotalPrice": 56,
+        "_id": {
+          "$oid": "658448a34126f25b6f5e6fb8"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedd"
+        },
+        "category": "maincourse",
+        "name": "Salad Roast",
+        "price": 52,
+        "quantity": 1,
+        "itemTotalPrice": 52,
+        "_id": {
+          "$oid": "658448a34126f25b6f5e6fb9"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee0"
+        },
+        "category": "maincourse",
+        "name": "Slow-Roasted",
+        "price": 40,
+        "quantity": 1,
+        "itemTotalPrice": 40,
+        "_id": {
+          "$oid": "658448a34126f25b6f5e6fba"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee2"
+        },
+        "category": "maincourse",
+        "name": "Mushrooms Yogurt",
+        "price": 52,
+        "quantity": 1,
+        "itemTotalPrice": 52,
+        "_id": {
+          "$oid": "658448a34126f25b6f5e6fbb"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef4"
+        },
+        "category": "cocktail",
+        "name": "Pina Colada",
+        "price": 11,
+        "quantity": 1,
+        "itemTotalPrice": 11,
+        "_id": {
+          "$oid": "658448a34126f25b6f5e6fbc"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef5"
+        },
+        "category": "cocktail",
+        "name": "Old Fashioned",
+        "price": 13,
+        "quantity": 1,
+        "itemTotalPrice": 13,
+        "_id": {
+          "$oid": "658448a34126f25b6f5e6fbd"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef9"
+        },
+        "category": "cocktail",
+        "name": "Savory cocktail",
+        "price": 14,
+        "quantity": 1,
+        "itemTotalPrice": 14,
+        "_id": {
+          "$oid": "658448a34126f25b6f5e6fbe"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebefa"
+        },
+        "category": "cocktail",
+        "name": "Minty Blueberry",
+        "price": 15,
+        "quantity": 1,
+        "itemTotalPrice": 15,
+        "_id": {
+          "$oid": "658448a34126f25b6f5e6fbf"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 752,
+    "createdAt": {
+      "$date": "2023-12-13T01:40:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658448f84126f25b6f5e6fdc"
+    },
+    "username": "Jennifer Hardy",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed7"
+        },
+        "category": "appetizer",
+        "name": "Crispy Zucchini",
+        "price": 27,
+        "quantity": 13,
+        "itemTotalPrice": 351,
+        "_id": {
+          "$oid": "658448f84126f25b6f5e6fdd"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed8"
+        },
+        "category": "appetizer",
+        "name": "Teriyaki Glazed ",
+        "price": 29,
+        "quantity": 10,
+        "itemTotalPrice": 290,
+        "_id": {
+          "$oid": "658448f84126f25b6f5e6fde"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed1"
+        },
+        "category": "appetizer",
+        "name": "Truffle Parmesan ",
+        "price": 30,
+        "quantity": 11,
+        "itemTotalPrice": 330,
+        "_id": {
+          "$oid": "658448f84126f25b6f5e6fdf"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed2"
+        },
+        "category": "appetizer",
+        "name": "Cucumber Feta",
+        "price": 18,
+        "quantity": 9,
+        "itemTotalPrice": 162,
+        "_id": {
+          "$oid": "658448f84126f25b6f5e6fe0"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee6"
+        },
+        "category": "pizza",
+        "name": "Bacon Pizza",
+        "price": 50,
+        "quantity": 8,
+        "itemTotalPrice": 400,
+        "_id": {
+          "$oid": "658448f84126f25b6f5e6fe1"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeeb"
+        },
+        "category": "pizza",
+        "name": "Prosciutto Pizza",
+        "price": 64,
+        "quantity": 1,
+        "itemTotalPrice": 64,
+        "_id": {
+          "$oid": "658448f84126f25b6f5e6fe2"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeec"
+        },
+        "category": "pizza",
+        "name": "Pesto Pizza",
+        "price": 58,
+        "quantity": 1,
+        "itemTotalPrice": 58,
+        "_id": {
+          "$oid": "658448f84126f25b6f5e6fe3"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef0"
+        },
+        "category": "pizza",
+        "name": "Pizza Ricotta",
+        "price": 58,
+        "quantity": 8,
+        "itemTotalPrice": 464,
+        "_id": {
+          "$oid": "658448f84126f25b6f5e6fe4"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 2119,
+    "createdAt": {
+      "$date": "2023-12-14T06:00:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658449274126f25b6f5e6ff3"
+    },
+    "username": "Tony clyde",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef4"
+        },
+        "category": "cocktail",
+        "name": "Pina Colada",
+        "price": 11,
+        "quantity": 1,
+        "itemTotalPrice": 11,
+        "_id": {
+          "$oid": "658449274126f25b6f5e6ff4"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef5"
+        },
+        "category": "cocktail",
+        "name": "Old Fashioned",
+        "price": 13,
+        "quantity": 16,
+        "itemTotalPrice": 208,
+        "_id": {
+          "$oid": "658449274126f25b6f5e6ff5"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef2"
+        },
+        "category": "cocktail",
+        "name": "Martini",
+        "price": 14,
+        "quantity": 1,
+        "itemTotalPrice": 14,
+        "_id": {
+          "$oid": "658449274126f25b6f5e6ff6"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef3"
+        },
+        "category": "cocktail",
+        "name": "Mojito",
+        "price": 10,
+        "quantity": 10,
+        "itemTotalPrice": 100,
+        "_id": {
+          "$oid": "658449274126f25b6f5e6ff7"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef7"
+        },
+        "category": "cocktail",
+        "name": "Negroni",
+        "price": 15,
+        "quantity": 1,
+        "itemTotalPrice": 15,
+        "_id": {
+          "$oid": "658449274126f25b6f5e6ff8"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebefb"
+        },
+        "category": "cocktail",
+        "name": "Lavender Lemon",
+        "price": 19,
+        "quantity": 1,
+        "itemTotalPrice": 19,
+        "_id": {
+          "$oid": "658449274126f25b6f5e6ff9"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 367,
+    "createdAt": {
+      "$date": "2023-12-15T10:20:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658449994126f25b6f5e7026"
+    },
+    "username": "Scott tony",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee8"
+        },
+        "category": "pizza",
+        "name": "Chicken Pizza",
+        "price": 54,
+        "quantity": 8,
+        "itemTotalPrice": 432,
+        "_id": {
+          "$oid": "658449994126f25b6f5e7027"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeed"
+        },
+        "category": "pizza",
+        "name": "Sausage Pizza",
+        "price": 66,
+        "quantity": 7,
+        "itemTotalPrice": 462,
+        "_id": {
+          "$oid": "658449994126f25b6f5e7028"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeeb"
+        },
+        "category": "pizza",
+        "name": "Prosciutto Pizza",
+        "price": 64,
+        "quantity": 1,
+        "itemTotalPrice": 64,
+        "_id": {
+          "$oid": "658449994126f25b6f5e7029"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeef"
+        },
+        "category": "pizza",
+        "name": "Meat Pizza",
+        "price": 70,
+        "quantity": 6,
+        "itemTotalPrice": 420,
+        "_id": {
+          "$oid": "658449994126f25b6f5e702a"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedd"
+        },
+        "category": "maincourse",
+        "name": "Salad Roast",
+        "price": 52,
+        "quantity": 1,
+        "itemTotalPrice": 52,
+        "_id": {
+          "$oid": "658449994126f25b6f5e702b"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedc"
+        },
+        "category": "maincourse",
+        "name": "Habanero BBQ",
+        "price": 44,
+        "quantity": 1,
+        "itemTotalPrice": 44,
+        "_id": {
+          "$oid": "658449994126f25b6f5e702c"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee1"
+        },
+        "category": "maincourse",
+        "name": "Lamb Chops",
+        "price": 56,
+        "quantity": 1,
+        "itemTotalPrice": 56,
+        "_id": {
+          "$oid": "658449994126f25b6f5e702d"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee3"
+        },
+        "category": "maincourse",
+        "name": "Pomegranate Glazed",
+        "price": 60,
+        "quantity": 1,
+        "itemTotalPrice": 60,
+        "_id": {
+          "$oid": "658449994126f25b6f5e702e"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 1590,
+    "createdAt": {
+      "$date": "2023-12-16T14:45:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "658449d64126f25b6f5e7057"
+    },
+    "username": "Mark Riley",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed7"
+        },
+        "category": "appetizer",
+        "name": "Crispy Zucchini",
+        "price": 27,
+        "quantity": 1,
+        "itemTotalPrice": 27,
+        "_id": {
+          "$oid": "658449d64126f25b6f5e7058"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed8"
+        },
+        "category": "appetizer",
+        "name": "Teriyaki Glazed ",
+        "price": 29,
+        "quantity": 1,
+        "itemTotalPrice": 29,
+        "_id": {
+          "$oid": "658449d64126f25b6f5e7059"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed1"
+        },
+        "category": "appetizer",
+        "name": "Truffle Parmesan ",
+        "price": 30,
+        "quantity": 1,
+        "itemTotalPrice": 30,
+        "_id": {
+          "$oid": "658449d64126f25b6f5e705a"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee6"
+        },
+        "category": "pizza",
+        "name": "Bacon Pizza",
+        "price": 50,
+        "quantity": 1,
+        "itemTotalPrice": 50,
+        "_id": {
+          "$oid": "658449d64126f25b6f5e705b"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebeee"
+        },
+        "category": "pizza",
+        "name": "Margarita Pizza ",
+        "price": 62,
+        "quantity": 1,
+        "itemTotalPrice": 62,
+        "_id": {
+          "$oid": "658449d64126f25b6f5e705c"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedd"
+        },
+        "category": "maincourse",
+        "name": "Salad Roast",
+        "price": 52,
+        "quantity": 1,
+        "itemTotalPrice": 52,
+        "_id": {
+          "$oid": "658449d64126f25b6f5e705d"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedc"
+        },
+        "category": "maincourse",
+        "name": "Habanero BBQ",
+        "price": 44,
+        "quantity": 1,
+        "itemTotalPrice": 44,
+        "_id": {
+          "$oid": "658449d64126f25b6f5e705e"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedb"
+        },
+        "category": "maincourse",
+        "name": "Grilled Pork",
+        "price": 48,
+        "quantity": 1,
+        "itemTotalPrice": 48,
+        "_id": {
+          "$oid": "658449d64126f25b6f5e705f"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef7"
+        },
+        "category": "cocktail",
+        "name": "Negroni",
+        "price": 15,
+        "quantity": 1,
+        "itemTotalPrice": 15,
+        "_id": {
+          "$oid": "658449d64126f25b6f5e7060"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebefb"
+        },
+        "category": "cocktail",
+        "name": "Lavender Lemon",
+        "price": 19,
+        "quantity": 1,
+        "itemTotalPrice": 19,
+        "_id": {
+          "$oid": "658449d64126f25b6f5e7061"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 376,
+    "createdAt": {
+      "$date": "2023-12-17T19:05:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65844a044126f25b6f5e7071"
+    },
+    "username": "John pope",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedd"
+        },
+        "category": "maincourse",
+        "name": "Salad Roast",
+        "price": 52,
+        "quantity": 1,
+        "itemTotalPrice": 52,
+        "_id": {
+          "$oid": "65844a044126f25b6f5e7072"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedb"
+        },
+        "category": "maincourse",
+        "name": "Grilled Pork",
+        "price": 48,
+        "quantity": 1,
+        "itemTotalPrice": 48,
+        "_id": {
+          "$oid": "65844a044126f25b6f5e7073"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebede"
+        },
+        "category": "maincourse",
+        "name": "Mast Biryani",
+        "price": 50,
+        "quantity": 1,
+        "itemTotalPrice": 50,
+        "_id": {
+          "$oid": "65844a044126f25b6f5e7074"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedf"
+        },
+        "category": "maincourse",
+        "name": "Tamarind-Glazed ",
+        "price": 54,
+        "quantity": 1,
+        "itemTotalPrice": 54,
+        "_id": {
+          "$oid": "65844a044126f25b6f5e7075"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed2"
+        },
+        "category": "appetizer",
+        "name": "Cucumber Feta",
+        "price": 18,
+        "quantity": 1,
+        "itemTotalPrice": 18,
+        "_id": {
+          "$oid": "65844a044126f25b6f5e7076"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed1"
+        },
+        "category": "appetizer",
+        "name": "Truffle Parmesan ",
+        "price": 30,
+        "quantity": 1,
+        "itemTotalPrice": 30,
+        "_id": {
+          "$oid": "65844a044126f25b6f5e7077"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed6"
+        },
+        "category": "appetizer",
+        "name": "Stuffed Jalapeños",
+        "price": 28,
+        "quantity": 1,
+        "itemTotalPrice": 28,
+        "_id": {
+          "$oid": "65844a044126f25b6f5e7078"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 280,
+    "createdAt": {
+      "$date": "2023-12-18T23:25:00.000Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65844a444126f25b6f5e7096"
+    },
+    "username": "Liam Grenberg",
+    "menu": [
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed3"
+        },
+        "category": "appetizer",
+        "name": "Pesto Stuffed",
+        "price": 19,
+        "quantity": 1,
+        "itemTotalPrice": 19,
+        "_id": {
+          "$oid": "65844a444126f25b6f5e7097"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebecd"
+        },
+        "category": "appetizer",
+        "name": "Caprese Skewers",
+        "price": 22,
+        "quantity": 1,
+        "itemTotalPrice": 22,
+        "_id": {
+          "$oid": "65844a444126f25b6f5e7098"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebed5"
+        },
+        "category": "appetizer",
+        "name": "Avocado Shrimp",
+        "price": 25,
+        "quantity": 1,
+        "itemTotalPrice": 25,
+        "_id": {
+          "$oid": "65844a444126f25b6f5e7099"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee8"
+        },
+        "category": "pizza",
+        "name": "Chicken Pizza",
+        "price": 54,
+        "quantity": 1,
+        "itemTotalPrice": 54,
+        "_id": {
+          "$oid": "65844a444126f25b6f5e709a"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee9"
+        },
+        "category": "pizza",
+        "name": "Caprese Pizza",
+        "price": 60,
+        "quantity": 1,
+        "itemTotalPrice": 60,
+        "_id": {
+          "$oid": "65844a444126f25b6f5e709b"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebee0"
+        },
+        "category": "maincourse",
+        "name": "Slow-Roasted",
+        "price": 40,
+        "quantity": 1,
+        "itemTotalPrice": 40,
+        "_id": {
+          "$oid": "65844a444126f25b6f5e709c"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebedb"
+        },
+        "category": "maincourse",
+        "name": "Grilled Pork",
+        "price": 48,
+        "quantity": 1,
+        "itemTotalPrice": 48,
+        "_id": {
+          "$oid": "65844a444126f25b6f5e709d"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef4"
+        },
+        "category": "cocktail",
+        "name": "Pina Colada",
+        "price": 11,
+        "quantity": 1,
+        "itemTotalPrice": 11,
+        "_id": {
+          "$oid": "65844a444126f25b6f5e709e"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef2"
+        },
+        "category": "cocktail",
+        "name": "Martini",
+        "price": 14,
+        "quantity": 1,
+        "itemTotalPrice": 14,
+        "_id": {
+          "$oid": "65844a444126f25b6f5e709f"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef6"
+        },
+        "category": "cocktail",
+        "name": "Cosmopolitan",
+        "price": 12,
+        "quantity": 1,
+        "itemTotalPrice": 12,
+        "_id": {
+          "$oid": "65844a444126f25b6f5e70a0"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebef8"
+        },
+        "category": "cocktail",
+        "name": "Daiquiri",
+        "price": 10,
+        "quantity": 1,
+        "itemTotalPrice": 10,
+        "_id": {
+          "$oid": "65844a444126f25b6f5e70a1"
+        }
+      },
+      {
+        "itemId": {
+          "$oid": "656e347d1fdb19422c8ebefb"
+        },
+        "category": "cocktail",
+        "name": "Lavender Lemon",
+        "price": 19,
+        "quantity": 1,
+        "itemTotalPrice": 19,
+        "_id": {
+          "$oid": "65844a444126f25b6f5e70a2"
+        }
+      }
+    ],
+    "status": "Completed",
+    "sumTotalPrice": 334,
+    "createdAt": {
+      "$date": "2023-12-19T05:50:00.000Z"
+    },
+    "__v": 0
   }
-}
+]

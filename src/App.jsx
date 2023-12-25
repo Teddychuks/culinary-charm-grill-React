@@ -6,7 +6,6 @@ import { Toaster } from "react-hot-toast";
 import AppLayout from "./components/AppLayout";
 import Menu from "./pages/Menu";
 import Orders from "./pages/Orders";
-import Admin from "./pages/Admin";
 import Analytics from "./pages/Analytics";
 import ApiDocumentation from "./pages/ApiDocumentation";
 import Settings from "./pages/Settings";
@@ -50,7 +49,6 @@ function App() {
                 element={<ProductDetails />}
               />
               <Route path="orders" element={<Orders />} />
-              <Route path="admin" element={<Admin />} />
               <Route path="analytics" element={<Analytics />} />
               <Route path="api_documentation" element={<ApiDocumentation />} />
               <Route path="settings" element={<Settings />} />

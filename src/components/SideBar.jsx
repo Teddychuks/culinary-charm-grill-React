@@ -5,7 +5,6 @@ import { useMediaQuery } from "react-responsive";
 import {
   HiBars3,
   HiPencil,
-  HiOutlineUsers,
   HiVariable,
   HiOutlineBookOpen,
   HiOutlineWrenchScrewdriver,
@@ -16,16 +15,15 @@ import { serverUrl } from "../services/server";
 
 const menuItems = [
   {
-    label: "Analytics",
+    label: "Content",
     items: [
       { to: "menu", icon: HiBars3, label: "Menu" },
       { to: "orders", icon: HiPencil, label: "Orders" },
     ],
   },
   {
-    label: "Content",
+    label: "Business Intelligence",
     items: [
-      { to: "admin", icon: HiOutlineUsers, label: "Admin" },
       { to: "analytics", icon: HiVariable, label: "Analytics" },
       {
         to: "api_documentation",
@@ -37,7 +35,11 @@ const menuItems = [
   {
     label: "Customization",
     items: [
-      { to: "settings", icon: HiOutlineWrenchScrewdriver, label: "Settings" },
+      {
+        to: "settings",
+        icon: HiOutlineWrenchScrewdriver,
+        label: "User Settings",
+      },
     ],
   },
 ];

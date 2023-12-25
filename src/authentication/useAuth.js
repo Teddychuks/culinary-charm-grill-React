@@ -3,12 +3,13 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 
+import { getUser } from "../services/apiAuth";
 import { signInUser as signInApi } from "../services/apiAuth";
 import { signUpUser as signUpApi } from "../services/apiAuth";
 import { forgotPassword as forgotPasswordApi } from "../services/apiAuth";
 import { resetPassword as resetPasswordApi } from "../services/apiAuth";
 import { logout as logoutApi } from "../services/apiAuth";
-import { getUser } from "../services/apiAuth";
+import { changePassword as changePasswordApi } from "../services/apiAuth";
 
 export function useSignInUser() {
   const navigate = useNavigate();
@@ -131,4 +132,26 @@ export function useLogout() {
   });
 
   return { logout, isPending };
+}
+
+export function useChangePassword() {
+  const navigate = useNavigate();
+  const queryClient = useQueryClient();
+
+  const { isPending, mutate: handleChangePassword } = useMutation({
+    mutationKey: "change_password",
+    mutationFn: (updateData) => changePasswordApi(updateData),
+    onSuccess: () => {
+      toast.success("Password Successfully Changed");
+      localStorage.removeItem("token");
+      localStorage.removeItem("userData");
+      queryClient.removeQueries();
+      navigate("/sign_in", { replace: true });
+    },
+    onError: () => {
+      toast.error("An error occurred,please confirm your credentials");
+    },
+  });
+
+  return { handleChangePassword, isPending };
 }
