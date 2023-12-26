@@ -8,18 +8,18 @@ function GetAllMenu({ serverUrl }) {
 
   return (
     <div>
-      <div className="flex items-center gap-3 font-medium">
+      <div className="flex items-center gap-3 font-medium text-sm">
         <span className="text-green-500">GET</span>
         <span className="text-gray-700">Get All Menu Items</span>
       </div>
-      <button className="bg-white flex items-center mt-3 rounded-lg text-gray-700 hover:bg-gray-100 duration-300 transition-colors border px-8 py-2.5">
-        <span className="text-sm">{apiUrl}</span>
+      <button className="bg-white text-xs flex items-center mt-3 w-64 rounded-lg text-gray-700 hover:bg-gray-100 duration-300 transition-colors border px-8 py-2.5">
+        <span className="">{apiUrl}</span>
       </button>
-      <p className="text-gray-700 mt-3">
+      <p className="text-gray-700 mt-3 text-sm">
         This endpoint retrieves the list of appetizers, pizzas, main courses,
         and cocktails menu items.
       </p>
-      <p className="text-gray-700 mt-3">
+      <p className="text-gray-700 mt-3 text-sm">
         The response will have a status code of 200, and the body will contain
         an array of menu items. Each item includes details such as type, name,
         description, price, quantity, preparation time, calories, photo, average

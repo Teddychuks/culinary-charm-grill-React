@@ -134,7 +134,7 @@ const MenuDetails = () => {
                 {menuItem.name}
               </h1>
               <p className="mt-2 text-xs text-gray-600 p-2 h-16">
-                {truncateDescription(menuItem.description, 12)}
+                {truncateDescription(menuItem.description, 10)}
               </p>
 
               <div className="flex mt-2 item-center gap-2">

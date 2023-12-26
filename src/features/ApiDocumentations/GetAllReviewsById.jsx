@@ -23,14 +23,14 @@ function GetAllReviewsById({ serverUrl }) {
 
   return (
     <div>
-      <div className="flex items-center gap-3 font-medium">
+      <div className="flex items-center gap-3 font-medium text-sm">
         <span className="text-green-500">GET</span>
         <span className="text-gray-700">Get All Reviews On Menu Item</span>
       </div>
-      <button className="bg-white flex items-center mt-3 rounded-lg text-gray-700 hover:bg-gray-100 duration-300 transition-colors border px-8 py-2.5">
+      <button className="bg-white flex items-center text-xs t mt-3 w-64 rounded-lg text-gray-700 hover:bg-gray-100 duration-300 transition-colors border px-8 py-2.5">
         <span className="text-sm">${serverUrl}menu/appetizer/:id</span>
       </button>
-      <p className="text-gray-700 mt-3">
+      <p className="text-gray-700 mt-3 text-sm">
         This endpoint retrieves the reviews for a specific menu item id. The
         request does not require a request body, use the url params to pass the
         id .
