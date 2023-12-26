@@ -1,5 +1,5 @@
 import { FaAngleRight, FaHouse } from "react-icons/fa6";
-import { useLocation } from "react-router-dom"; // Import the useLocation hook
+import { Link, useLocation } from "react-router-dom"; // Import the useLocation hook
 
 function BreadCrumb() {
   const location = useLocation(); // Use the useLocation hook to get the current location
@@ -30,11 +30,13 @@ function BreadCrumb() {
           className="ms-3 flex items-center whitespace-nowrap"
           aria-label="Breadcrumb"
         >
-          <li className="flex items-center text-sm text-gray-800 dark:text-sky-400">
-            <FaHouse className="flex-shrink-0 mx-3 overflow-visible h-3 w-3 text-gray-400 dark:text-gray-600" />
-            Home
-            <FaAngleRight className="flex-shrink-0 mx-3 overflow-visible h-3 w-3 text-gray-400 dark:text-gray-600" />
-          </li>
+          <Link to="/">
+            <li className="flex items-center text-sm text-gray-800 dark:text-sky-400">
+              <FaHouse className="flex-shrink-0 mx-3 overflow-visible h-3 w-3 text-gray-400 dark:text-gray-600" />
+              Home
+              <FaAngleRight className="flex-shrink-0 mx-3 overflow-visible h-3 w-3 text-gray-400 dark:text-gray-600" />
+            </li>
+          </Link>
           <li
             className="text-sm font-semibold text-gray-800 truncate dark:text-sky-600"
             aria-current="page"
