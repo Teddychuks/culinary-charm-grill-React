@@ -95,21 +95,25 @@ const MenuDetails = () => {
   };
 
   return (
-    <div>
-      <div className="flex gap-2 py-3">
-        <CustomSelect
-          options={filterOptions}
-          onSelectChange={handleFilterChange}
-          selectedOption={selectedFilterOption}
-          icon={FaFilter}
-        />
-        <CustomSelect
-          options={sortOptions}
-          onSelectChange={handleSortChange}
-          selectedOption={selectedSortedOption}
-          icon={FaSort}
-          placeholder="sort..."
-        />
+    <div className="">
+      <div className="flex gap-2 mb-3 container mx-auto justify-center items-center px-4">
+        <div>
+          <CustomSelect
+            options={filterOptions}
+            onSelectChange={handleFilterChange}
+            selectedOption={selectedFilterOption}
+            icon={FaFilter}
+          />
+        </div>
+        <div>
+          <CustomSelect
+            options={sortOptions}
+            onSelectChange={handleSortChange}
+            selectedOption={selectedSortedOption}
+            icon={FaSort}
+            placeholder="sort..."
+          />
+        </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
