@@ -39,7 +39,7 @@ function CustomSelect({
     <div className="relative" ref={customSelectRef}>
       <button
         type="button"
-        className="relative py-3 px-4 pe-9 flex text-nowrap w-48 cursor-pointer bg-white border border-gray-200 rounded-lg text-start text-sm focus:border-blue-500 focus:ring-blue-500 before:absolute before:inset-0 before:z-[1]"
+        className="relative py-3 px-4 pe-9 flex text-nowrap w-44 cursor-pointer bg-white border border-gray-200 rounded-lg text-start text-sm focus:border-blue-500 focus:ring-blue-500 before:absolute before:inset-0 before:z-[1]"
         onClick={toggleDropdown}
       >
         {selectedOption || placeholder}

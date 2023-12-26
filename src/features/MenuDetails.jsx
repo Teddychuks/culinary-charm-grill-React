@@ -95,7 +95,7 @@ const MenuDetails = () => {
   };
 
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <div className="flex gap-2 mb-3 container mx-auto justify-center items-center px-4">
         <div>
           <CustomSelect
