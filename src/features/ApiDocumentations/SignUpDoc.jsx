@@ -27,7 +27,7 @@ function SignUpDoc({ serverUrl }) {
         <span className="text-gray-700">Signup users</span>
       </div>
       <button className="bg-white flex items-center text-xs w-64 mt-3 rounded-lg text-gray-700 hover:bg-gray-100 duration-300 transition-colors border px-8 py-2.5">
-        <span className="text-sm">{`${serverUrl}user/signup`}</span>
+        <span className="flex-grow flex-shrink-0 overflow-hidden">{`${serverUrl}user/signup`}</span>
       </button>
       <p className="text-gray-700 mt-3 text-sm">
         This endpoint allows users to sign up by providing their name, email,

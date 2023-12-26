@@ -30,7 +30,7 @@ function CreateOrdersDoc({ serverUrl }) {
       </div>
 
       <button className="bg-white flex items-center text-xs mt-3 w-64 rounded-lg text-gray-700 hover:bg-gray-100 duration-300 transition-colors border px-8 py-2.5">
-        <span className="">{`${serverUrl}orders/create`}</span>
+        <span className="flex-grow flex-shrink-0 overflow-hidden">{`${serverUrl}orders/create`}</span>
       </button>
 
       <p className="text-gray-700 mt-3 text-sm">

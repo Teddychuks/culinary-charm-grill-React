@@ -30,7 +30,7 @@ function CreateNewReviewsDoc({ serverUrl }) {
       </div>
 
       <button className="bg-white flex w-64 items-center mt-3 text-xs rounded-lg text-gray-700 hover:bg-gray-100 duration-300 transition-colors border px-8 py-2.5">
-        <span className="text-xs">{`${serverUrl}menu/appetizer/:id/reviews`}</span>
+        <span className="text-xs flex-grow flex-shrink-0 overflow-hidden">{`${serverUrl}menu/appetizer/:id/reviews`}</span>
       </button>
 
       <p className="text-gray-700 mt-3 text-sm">

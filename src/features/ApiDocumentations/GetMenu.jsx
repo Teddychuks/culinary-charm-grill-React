@@ -14,7 +14,9 @@ function GetMenu({ serverUrl }) {
         <span className="text-gray-700">Get Menu Item</span>
       </div>
       <button className="bg-white flex items-center mt-3 test-xs w-64 rounded-lg text-gray-700 hover:bg-gray-100 duration-300 transition-colors border px-8 py-2.5">
-        <span className="text-sm">{apiUrl}</span>
+        <span className="flex-grow flex-shrink-0 overflow-hidden">
+          {apiUrl}
+        </span>
       </button>
       <p className="text-gray-700 mt-3 text-sm">
         This HTTP GET request retrieves details of a specific
