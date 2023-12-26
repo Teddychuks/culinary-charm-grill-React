@@ -14,7 +14,7 @@ const SignUp = () => {
   }
 
   return (
-    <section className="bg-white">
+    <section className="bg-white overflow-hidden">
       <div className="container min-h-screen px-6 py-12 mx-auto lg:flex justify-between lg:items-center lg:gap-12">
         <div className="flex flex-col items-center justify-center h-screen">
           <div className="bg-white w-96 p-8 rounded-md shadow-lg border">

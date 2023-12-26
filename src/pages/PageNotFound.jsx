@@ -11,7 +11,7 @@ function PageNotFound() {
     navigate(isAuthenticated ? "/menu" : " sign_in ");
 
   return (
-    <section className="bg-white">
+    <section className="bg-white overflow-hidden">
       <div className="container min-h-screen px-6 py-12 mx-auto lg:flex lg:items-center lg:gap-12">
         <div className="wf-ull lg:w-1/2">
           <p className="text-sm font-medium text-blue-500">

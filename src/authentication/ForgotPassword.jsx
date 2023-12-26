@@ -16,7 +16,7 @@ function ForgotPassword() {
   }
 
   return (
-    <section className="bg-white p-8 ">
+    <section className="bg-white p-8 overflow-hidden ">
       <div className="container min-h-screen px-6 py-12 mx-auto lg:flex lg:items-center lg:gap-12">
         <div className="w-full max-w-md mx-auto p-6 mt-7 bg-white border rounded-xl shadow-lg">
           <div className="p-4 sm:p-7">
