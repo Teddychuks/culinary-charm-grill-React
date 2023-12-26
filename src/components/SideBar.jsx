@@ -83,6 +83,7 @@ function SideBar({ open, setOpen }) {
       }, 100);
     }
   };
+
   useDetectClickOutside(sidebarRef, handleCloseSidebar);
 
   return (

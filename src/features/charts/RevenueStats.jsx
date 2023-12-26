@@ -11,7 +11,9 @@ const RevenueStats = () => {
 
   const dynamicData = aggregationData?.orderstats.totalRevenueOvertime;
 
+  // Extract dates and sort them
   const dates = dynamicData.map((entry) => new Date(entry._id.date).getTime());
+  dates.sort((a, b) => b - a);
 
   const chartData = {
     series: [

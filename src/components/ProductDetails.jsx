@@ -78,9 +78,11 @@ function ProductDetails() {
               <span className="font-medium text-2xl text-red-500">
                 ${menu.price}
               </span>
-              <Button onClick={moveback}>Back</Button>
+              <Button className=" text-xs" onClick={moveback}>
+                Back
+              </Button>
               <button
-                className={`flex ml-auto px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 ${
+                className={`flex ml-auto px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80  text-xs ${
                   validate
                     ? "bg-gray-500 opacity-50 cursor-not-allowed"
                     : "bg-blue-500 hover:bg-yellow-500"

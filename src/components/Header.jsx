@@ -29,7 +29,7 @@ function Header({ setOpen }) {
       >
         <div className=" flex items-center me-5 lg:me-0 lg:hidden">
           <Link
-            className="italic flex-none text-base font-semibold"
+            className="italic flex-none text-base font-semibold   text-blue-500"
             aria-label="CulinaryCharm Grill"
             to="/"
           >
@@ -41,7 +41,7 @@ function Header({ setOpen }) {
           <div className="sm:hidden">
             <button
               type="button"
-              className="w-[2.375rem] h-[2.375rem] inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none "
+              className="w-[2.375rem] h-[2.375rem] inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none ml-5"
               onClick={() => {
                 setOpen((prevOpen) => !prevOpen);
               }}
@@ -50,67 +50,39 @@ function Header({ setOpen }) {
             </button>
           </div>
 
-          <div className="hidden sm:block">
-            <label htmlFor="icon" className="sr-only">
-              Search
-            </label>
-            <div className="relative ">
-              <div className="absolute inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-4">
-                <svg
-                  className="flex-shrink-0 h-4 w-4 text-sky-400"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <circle cx="11" cy="11" r="8" />
-                  <path d="m21 21-4.3-4.3" />
-                </svg>
-              </div>
-              <input
-                type="text"
-                id="icon"
-                name="icon"
-                className="py-2 px-4 ps-11 block w-full bg-sky-100 border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring "
-                placeholder="Search"
-              />
-            </div>
+          <div className="hidden sm:block font-semibold italic text-base text-blue-500">
+            <p>Culinary Charm Grill</p>
           </div>
 
           <div className="flex flex-row items-center justify-end gap-2">
             <div className="relative inline-block">
-              <button
-                type="button"
-                className="relative inline-flex justify-center items-center h-[3rem] w-[3.1rem] text-sm font-semibold  bg-white text-gray-800  hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
-              >
-                <Link to="/cart" className="relative">
+              <Link to="/cart" className="relative">
+                <button
+                  type="button"
+                  className="relative inline-flex justify-center items-center h-[3rem] w-[3.1rem] text-sm font-semibold  bg-white text-gray-800  hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none "
+                >
                   <img
                     src={`${serverUrl}${"trolley.png"}`}
                     alt="trolley"
                     className="w-7 h-7"
                   />
-                </Link>
-                {selectedItemsCount ? (
-                  <span
-                    style={{
-                      animation:
-                        "ping 1.4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-                      transformOrigin: "center",
-                      transform: "scale(1.5)",
-                    }}
-                    className="animate-ping absolute top-0 end-0 inline-flex items-center py-0.5 px-1.5 rounded-full text-sm font-medium transform -translate-y-1/2 translate-x-1/2 bg-red-500 text-white"
-                  >
-                    {selectedItemsCount}
-                  </span>
-                ) : (
-                  ""
-                )}
-              </button>
+                  {selectedItemsCount ? (
+                    <span
+                      style={{
+                        animation:
+                          "ping 1.4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+                        transformOrigin: "center",
+                        transform: "scale(1.5)",
+                      }}
+                      className="animate-ping absolute top-0 end-0 inline-flex items-center py-0.5 px-1.5 rounded-full text-sm font-medium transform -translate-y-1/2 translate-x-1/2 bg-red-500 text-white"
+                    >
+                      {selectedItemsCount}
+                    </span>
+                  ) : (
+                    ""
+                  )}
+                </button>
+              </Link>
             </div>
 
             <button
