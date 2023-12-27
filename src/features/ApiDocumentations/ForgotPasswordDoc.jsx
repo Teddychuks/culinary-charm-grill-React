@@ -29,7 +29,7 @@ function ForgotPasswordDoc({ serverUrl }) {
         <span className="text-gray-700">Forgot Password</span>
       </div>
 
-      <button className="bg-white flex items-center text-xs mt-3 w-64 rounded-lg text-gray-700 hover:bg-gray-100 duration-300 transition-colors border px-8 py-2.5">
+      <button className="bg-white flex w-full md:w-64 items-center mt-3 text-xs sm:text-sm rounded-lg text-gray-700 hover:bg-gray-100 duration-300 transition-colors border px-8 py-2.5 overflow-hidden whitespace-normal">
         <span className="flex-grow flex-shrink-0 overflow-hidden">{`${serverUrl}user/forgotPassword`}</span>
       </button>
 
