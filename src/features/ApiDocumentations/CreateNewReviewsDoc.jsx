@@ -28,8 +28,11 @@ function CreateNewReviewsDoc({ serverUrl }) {
         <span className="text-yellow-500">POST</span>
         <span className="text-gray-700">Create New Reviews</span>
       </div>
-      <button className="bg-white flex w-full md:w-64 items-center mt-3 text-xs sm:text-sm rounded-lg text-gray-700 hover:bg-gray-100 duration-300 transition-colors border px-8 py-2.5 overflow-hidden whitespace-normal">
-        {`${serverUrl}menu/appetizer/:id/reviews`}
+      <button className="bg-white flex w-full md:items-center mt-3 text-xs sm:text-sm rounded-lg text-gray-700 hover:bg-gray-100 duration-300 transition-colors border px-8 py-2.5 overflow-hidden whitespace-normal">
+        <span className="flex-wrap overflow-hidden ">
+          {" "}
+          {`${serverUrl}menu/appetizer/:id/reviews`}{" "}
+        </span>
       </button>
 
       <p className="text-gray-700 mt-3 text-sm">

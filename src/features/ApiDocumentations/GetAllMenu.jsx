@@ -12,10 +12,8 @@ function GetAllMenu({ serverUrl }) {
         <span className="text-green-500">GET</span>
         <span className="text-gray-700">Get All Menu Items</span>
       </div>
-      <button className="bg-white flex w-full md:w-64 items-center mt-3 text-xs sm:text-sm rounded-lg text-gray-700 hover:bg-gray-100 duration-300 transition-colors border px-8 py-2.5 overflow-hidden whitespace-normal">
-        <span className="flex-grow flex-shrink-0 overflow-hidden">
-          {apiUrl}
-        </span>
+      <button className="bg-white flex w-full md:items-center mt-3 text-xs sm:text-sm rounded-lg text-gray-700 hover:bg-gray-100 duration-300 transition-colors border px-8 py-2.5 overflow-hidden whitespace-normal">
+        <span className="flex-wrap overflow-hidden ">{apiUrl}</span>
       </button>
       <p className="text-gray-700 mt-3 text-sm">
         This endpoint retrieves the list of appetizers, pizzas, main courses,
