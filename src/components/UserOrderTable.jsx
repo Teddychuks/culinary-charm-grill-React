@@ -51,7 +51,7 @@ function UserOrderTable() {
   }
 
   return (
-    <section className="container px-4 mx-auto min-h-screen">
+    <section className="container px-4 mx-auto min-h-screen overflow-hidden">
       <p className="mt-">Your order history: {user.name} </p>
 
       <div className="flex flex-col mt-6">
